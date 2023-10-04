@@ -3,6 +3,7 @@ import AppServices from './AppServices.vue';
 import AppBanner from './AppBanner.vue';
 import AppCourse from './AppCourses.vue';
 import AppFirstStep from './AppFirstStep.vue';
+import AppEvents from './AppEvents.vue';
 export default {
     name: "AppMain",
     components: {
@@ -10,6 +11,7 @@ export default {
         AppBanner,
         AppCourse,
         AppFirstStep,
+        AppEvents,
     }
 }
 </script>
@@ -20,6 +22,7 @@ export default {
         <AppBanner></AppBanner>
         <AppCourse></AppCourse>
         <AppFirstStep></AppFirstStep>
+        <AppEvents></AppEvents>
     </main>
 </template>
 
