@@ -2,12 +2,14 @@
 import AppServices from './AppServices.vue';
 import AppBanner from './AppBanner.vue';
 import AppCourse from './AppCourses.vue';
+import AppFirstStep from './AppFirstStep.vue';
 export default {
     name: "AppMain",
     components: {
         AppServices,
         AppBanner,
-        AppCourse
+        AppCourse,
+        AppFirstStep,
     }
 }
 </script>
@@ -17,6 +19,7 @@ export default {
         <AppServices></AppServices>
         <AppBanner></AppBanner>
         <AppCourse></AppCourse>
+        <AppFirstStep></AppFirstStep>
     </main>
 </template>
 
