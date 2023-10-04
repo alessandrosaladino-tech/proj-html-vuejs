@@ -56,7 +56,7 @@ export default {
                 </ul>
                 <button type="button" class="btn btn-warning btn_learn">Learn More</button>
             </div>
-            <div class="col-8 d-flex flex-wrap">
+            <div class="col-8 d-flex flex-wrap justify-content-around">
                 <div class="container_cards d-flex flex-column flex-wrap" v-for="item in servicesItem">
                     <img :src="item.img" alt="">
                     <h6 class="fw-semibold">{{ item.title }}</h6>
