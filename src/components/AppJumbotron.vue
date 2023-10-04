@@ -7,7 +7,7 @@ export default {
 <template>
 
  <div class="jumbotron p-5">
-      <div class="container py-5">
+      <div class="container py_">
         <div class="row">
           <div class="col-6">
             <span class="badge rounded-pill text-bg-warning">WELCOME</span>
@@ -43,6 +43,11 @@ jumbotron .col-6, h1 {
     color: $chess_primary;
 
   }
+}
+
+.py_ {
+  padding-top: 10rem;
+  padding-bottom: 10rem;
 }
 
 

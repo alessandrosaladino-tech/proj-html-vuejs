@@ -38,8 +38,8 @@ export default {
 <template>
     <div class="container pt-5 pb-5">
         <div class="div text-center pb-4">
-            <h2 class="fw-bold ">OUR SERVICES</h2>
-            <p class="bg_secondary fs-5">We make your child happy day after day</p>
+            <h1 class="fw-bold ">OUR SERVICES</h1>
+            <p class="bg_secondary text">We make your child happy day after day</p>
         </div>
         <div class="row">
             <div class="col-4">
@@ -106,4 +106,7 @@ li {
     }
 }
 
+.text {
+    font-size: 23px;
+}
 </style>

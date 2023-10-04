@@ -31,7 +31,7 @@ export default {
     <div class="container text-center courses">
         <div class="container text-center pb-3">
             <h1 class="fw-bold">Courses</h1>
-            <p>To keep up with the constantly rising standards of play</p>
+            <p class="text">To keep up with the constantly rising standards of play</p>
         </div>
         <div class="container d-flex gap-4">
             <div class="card  courses_card" v-for="course in courses">
@@ -77,6 +77,10 @@ p {
 .courses_card {
     border-bottom: 2px solid #9a9595ae;
     border-radius: 3px;
+}
+
+.text {
+    font-size: 23px;
 }
 
 </style>

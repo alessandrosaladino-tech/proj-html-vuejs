@@ -33,6 +33,6 @@ export default {
   background-image: url(./assets/img/mt-2236-home-bg1.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
+  background-position: bottom;
 }
 </style>

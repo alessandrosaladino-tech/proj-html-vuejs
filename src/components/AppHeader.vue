@@ -84,4 +84,10 @@ header {
   }
 
 }
+
+header {
+  position: fixed;
+  width: 100%;
+  margin-bottom:2rem;
+}
 </style>
