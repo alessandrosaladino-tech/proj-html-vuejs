@@ -65,6 +65,13 @@ img {
     width: 100%;
 }
 
+/* Effects */
+
+.col:hover{
+    transform: scale(1.1);
+    box-shadow: 0px 1px 5px $chess_accent;
+}
+
 /* Button */
 
 .btn_news {
