@@ -1,4 +1,5 @@
 <script>
+import { right } from '@popperjs/core';
 import AppButton from './AppButton.vue';
 export default {
     components: {
@@ -9,7 +10,8 @@ export default {
 
             icons: ["../src/assets/img/facebook-f.svg", "../src/assets/img/telegram.svg", "../src/assets/img/instagram.svg"],
             siteLogo: "../src/assets/img/mt-2236-home-logo.png",
-            copyright: `Copyright &copy; 2021.All Rights Reserved.`,
+            copyright: `Copyright`,
+            rights: " 2021.All Rights Reserved.",
             subscribedEmail: "",
             emailList: [],
         }
@@ -32,7 +34,7 @@ export default {
     <div class="container d-flex pt-5 pb-4">
         <div class="col">
             <img :src="siteLogo" alt="" class="site_img">
-            <p>{{ copyright }}</p>
+            <p>{{ copyright + " &#169;" + rights}}</p>
         </div>
         <div class="col">
             <h4 class="fw-bold pb-4">Follow Us</h4>
