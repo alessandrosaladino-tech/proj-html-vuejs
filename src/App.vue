@@ -2,6 +2,7 @@
 import AppHeader from './components/AppHeader.vue';
 import AppJumbotron from './components/AppJumbotron.vue';
 import AppMain from './components/AppMain.vue';
+import AppFooter from './components/AppFooter.vue';
 export default {
   data() {
     return {
@@ -12,6 +13,7 @@ export default {
     AppHeader,
     AppJumbotron,
     AppMain,
+    AppFooter,
   }
 }
 </script>
@@ -24,6 +26,10 @@ export default {
 
   <AppMain></AppMain>
 
+  <section id="footer_section">
+    <AppFooter></AppFooter>
+  </section>
+
 </template>
 
 <style lang="scss" scoped>
@@ -34,5 +40,10 @@ export default {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom;
+}
+
+#footer_section{
+  background-color: $chess_secondary;
+  color: $chess_white;
 }
 </style>
