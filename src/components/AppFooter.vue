@@ -67,8 +67,12 @@ export default {
 
 }
 
-.chess_icon:hover {
+.chess-icon:hover {
     background-color: $chess_primary;
+    
+    & .filter_icon{
+       filter:  invert(22%) sepia(8%) saturate(9%) hue-rotate(5deg) brightness(90%) contrast(84%);
+    } 
 }
 
 .container_icon {
