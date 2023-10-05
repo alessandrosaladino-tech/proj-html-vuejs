@@ -75,13 +75,18 @@ p {
 }
 
 .price {
-    font-weight: bold;
+    font-weight: bolder;
     color: black;
+    font-size: 20px;
 }
 
 .courses_card {
-    border-bottom: 2px solid #9a9595ae;
+    box-shadow: 0px 2px 9px $chess_secondary;
     border-radius: 3px;
+}
+
+.courses_card:hover {
+    transform: scale(1.1);
 }
 
 .text {
@@ -92,6 +97,7 @@ p {
 .bg_primary {
   background-color: $chess_primary;
   border: none;
+  margin-bottom: 15px;
 }
 .bg_primary:hover {
  background-color: $chess_secondary;
