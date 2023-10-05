@@ -28,7 +28,7 @@ export default {
         <h1 class="fw-bold">Our Events</h1>
         <p class="pb-5 text_color">Chess is fun and we are happy to prove it at our events!</p>
 
-        <div class="row g-0 align-items-center pb-5" v-for="event in events">
+        <div class="row g-0 align-items-center mb-5 pt-2 pb-2" v-for="event in events">
             <div class="col">
                 <img :src="event.img" alt="">
             </div>
@@ -61,6 +61,14 @@ export default {
 .text_color {
     color: $chess_text;
     font-size: 23px;
+}
+
+/* Effects */
+
+.row:hover {
+    transform: scale(2);
+    background-color: $chess_accent;
+    border: 1px double $chess_primary;
 }
 
 /* Buttons */
