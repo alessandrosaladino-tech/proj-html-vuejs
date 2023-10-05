@@ -1,6 +1,10 @@
         
 <script>
+import AppButton from './AppButton.vue';
 export default {
+    components: {
+        AppButton
+    },
     data() {
         return {
             imgBanner: ["../src/assets/img/mt-2236-home-gallery1.jpg", "../src/assets/img/mt-2236-home-gallery2.jpg", "../src/assets/img/mt-2236-home-gallery3.jpg", "../src/assets/img/mt-2236-home-gallery4.jpg"]
@@ -24,7 +28,7 @@ export default {
 
     <!--Play and learn-->
     <div class="container_play_learn">
-        <div class="container">
+        <div class="container pt-5 pb-5">
             <div class="row align-items-center">
                 <div class="col-2 d-flex justify-content-center">
                     <img src="../assets/img/mt-2236-home-icon5.png" alt="">
@@ -34,7 +38,7 @@ export default {
                     <p class="fw-light">Take a look into our day to day life here at Chess School</p>
                 </div>
                 <div class="col-2">
-                    <button type="button" class="btn btn-outline-dark w-100 fw-bold">Learn More</button>
+                    <AppButton class="bg_primary">Lean More</AppButton>
                 </div>
             </div>
         </div>
@@ -53,7 +57,6 @@ export default {
 
 .container_play_learn {
     background-color: $chess_primary;
-    height: 150px;
     display: flex;
     align-items: center;
 
@@ -66,4 +69,12 @@ export default {
     }
 }
 
+/* Button */
+.bg_primary {
+  background-color: $chess_primary;
+}
+.bg_primary:hover {
+ background-color: $chess_secondary;
+ color: $chess_primary;
+}
 </style>

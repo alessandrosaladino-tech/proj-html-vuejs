@@ -1,5 +1,9 @@
 <script>
+import AppButton from './AppButton.vue';
 export default {
+    components: {
+    AppButton,
+    },
     data() {
         return {
 
@@ -41,7 +45,7 @@ export default {
         <div class="col d-flex flex-column gap-3">
             <h4 class="m-0 fw-bold">Subscribe to get the latest news, course updates, discounts,events</h4>
             <input type="text" placeholder="Enter your e-mail here*" v-model="subscribedEmail" @keyup.enter="addEmail">
-            <button type="button" class="btn btn-warning" @click="addEmail" >Subscribe</button>
+            <AppButton class="bg_primary" @click="addEmail">Subscribe</AppButton>
         </div>
     </div>
 </template>
@@ -92,5 +96,16 @@ h4 {
 
 .filter_icon {
     filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(103deg) brightness(105%) contrast(105%);
+}
+
+/* Button */
+.bg_primary {
+  background-color: $chess_primary;
+  border: none;
+}
+.bg_primary:hover {
+ background-color: $chess_secondary;
+ color: $chess_primary;
+ border: 1px solid $chess_white;
 }
 </style>

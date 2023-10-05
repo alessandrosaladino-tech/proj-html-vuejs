@@ -1,5 +1,9 @@
 <script>
+import AppButton from './AppButton.vue';
 export default {
+    components: {
+        AppButton,
+    },
     data() {
         return {
             events: [
@@ -33,7 +37,7 @@ export default {
                 <p>{{ event.bio }}</p>
             </div>
             <div class="col">
-                <button type="button" class="btn btn-warning">Register</button>
+                <AppButton class="bg_primary">Register</AppButton>
             </div>
         </div>
     </div>
@@ -42,15 +46,16 @@ export default {
 
 <style lang="scss" scoped>
 @use "../assets/scss/partials/variables" as *;
-.row  p {
+
+.row p {
     font-size: 13.5px;
     color: $chess_text;
-    
+
 }
 
 .p_top {
     padding-top: 5rem;
-    padding-bottom: 3rem  ;
+    padding-bottom: 3rem;
 }
 
 .text_color {
@@ -58,4 +63,14 @@ export default {
     font-size: 23px;
 }
 
+/* Buttons */
+
+.bg_primary {
+  background-color: $chess_primary;
+  border: none;
+}
+.bg_primary:hover {
+ background-color: $chess_secondary;
+ color: $chess_primary;
+}
 </style>

@@ -1,5 +1,9 @@
 <script>
+import AppButton from './AppButton.vue';
 export default {
+    components: {
+        AppButton,
+    },
     data() {
         return {
             courses: [
@@ -42,12 +46,12 @@ export default {
                     <h3 class="fw-bold">{{ course.title }}</h3>
                     <p>{{ course.bio }}</p>
                     <p class="price">{{ course.price }}</p>
-                    <button type="button" class="btn btn-warning fw-bold">View More</button>
+                    <AppButton class="bg_primary">View More</AppButton>
                 </div>
             </div>
         </div>
 
-        <button type="button" class="btn btn-outline-dark m-5">View Other Courses</button>
+        <button type="button" class="button_courses">View Other Courses</button>
     </div>
 </template>
 
@@ -55,8 +59,9 @@ export default {
 <style lang="scss" scoped>
 @use "../assets/scss/partials/variables" as *;
 
-.card, img {
-width: 100%;
+.card,
+img {
+    width: 100%;
 
 }
 
@@ -81,6 +86,32 @@ p {
 
 .text {
     font-size: 23px;
+}
+
+/* Buttons */
+.bg_primary {
+  background-color: $chess_primary;
+  border: none;
+}
+.bg_primary:hover {
+ background-color: $chess_secondary;
+ color: $chess_primary;
+}
+
+.button_courses {
+    width: 250px;
+    height: 50px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-weight: bold;
+    background-color: $chess_white;
+    border-radius: 8px;
+}
+
+.button_courses:hover {
+    background-color: $chess_primary;
+    color: $chess_white;
+    border: none
 }
 
 </style>

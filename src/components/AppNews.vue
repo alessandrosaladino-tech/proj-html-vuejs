@@ -28,7 +28,7 @@ export default {
                         <div class="border_news"></div>
                     </div>
 
-                    <button type="button" class="btn btn-outline-dark fw-bold">View Other Posts</button>
+                    <button type="button" class="btn_news">View Other Posts</button>
                 </div>
                 <div class="col " v-for="item in news">
                     <img :src="item.img" alt="">
@@ -63,5 +63,20 @@ export default {
 .col4,
 img {
     width: 100%;
+}
+
+/* Button */
+
+.btn_news {
+    width: 240px;
+    height: 50px;
+    font-weight: bold;
+    border-radius: 6px;
+}
+
+.btn_news:hover {
+    background-color: $chess_primary;
+    color: $chess_white;
+    border: none;
 }
 </style>

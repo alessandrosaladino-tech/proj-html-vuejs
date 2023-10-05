@@ -1,10 +1,9 @@
 <script>
+import AppButton from './AppButton.vue';
 export default {
-    data() {
-
-
-        return {}
-    }
+components: {
+    AppButton,
+}
 }
 </script>
 
@@ -16,7 +15,7 @@ export default {
                 <p>The fascinating world of chess has its doors open for anyone</p>
             </div>
             <div class="container_button">
-                <button type="button" class="btn btn-warning button_width">View More</button>
+                <AppButton class="bg_primary">View More</AppButton>
             </div>
         </div>
     </div>
@@ -59,5 +58,15 @@ export default {
     width: 50%;
     display: flex;
     justify-content: center;
+}
+
+/* Button */
+.bg_primary {
+  background-color: $chess_primary;
+  border: none;
+}
+.bg_primary:hover {
+ background-color: $chess_secondary;
+ color: $chess_primary;
 }
 </style>

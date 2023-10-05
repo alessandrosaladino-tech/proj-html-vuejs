@@ -1,6 +1,11 @@
 <script>
+import AppButton from './AppButton.vue';
 export default {
     name: "AppServices",
+    components: {
+        AppButton,
+    },
+
     data() {
         return {
             listItems: ["Build self-regulation and motivation", "Help with concentration issues", "Learn to plan, organize and prioritize", "Regulate emotions", "Learn to pay attention to detail"],
@@ -36,7 +41,7 @@ export default {
 </script>
 
 <template>
-    <div class="container pt-5 pb-5">
+    <div class="container services">
         <div class="div text-center pb-4">
             <h1 class="fw-bold ">OUR SERVICES</h1>
             <p class="bg_secondary text">We make your child happy day after day</p>
@@ -54,7 +59,7 @@ export default {
                         <span class="ps-3">{{ item }}</span>
                     </li>
                 </ul>
-                <button type="button" class="btn btn-warning btn_learn">Learn More</button>
+                <AppButton class="bg_primary mt-3">Learn More</AppButton>
             </div>
             <div class="col-8 d-flex flex-wrap justify-content-around">
                 <div class="container_cards d-flex flex-column flex-wrap" v-for="item in servicesItem">
@@ -73,6 +78,15 @@ export default {
 <style lang="scss" scoped>
 @use "../assets/scss/partials/variables" as *;
 
+.services {
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+}
+
+p {
+    color: $chess_text;
+}
+
 li {
     list-style-type: none;
 
@@ -83,10 +97,6 @@ li {
 
 .btn_learn {
     width: 53%
-}
-
-.bg_secondary {
-    color: $chess_text;
 }
 
 .container_cards {
@@ -108,5 +118,15 @@ li {
 
 .text {
     font-size: 23px;
+}
+
+/* Button */
+.bg_primary {
+  background-color: $chess_primary;
+  border: none;
+}
+.bg_primary:hover {
+ background-color: $chess_secondary;
+ color: $chess_primary;
 }
 </style>

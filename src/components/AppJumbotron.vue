@@ -1,6 +1,10 @@
 <script>
+import AppButton from './AppButton.vue';
 export default {
     name: "AppJumbotron",
+    components:{
+      AppButton,
+    }
 }
 </script>
 
@@ -15,8 +19,8 @@ export default {
             <span>We are dedicated to broadening and developing chess as art, recreation, and as a significant element of
               culture in Northern California.</span>
             <div class="d-flex py-4 gap-3">
-              <button type="button" class="btn btn-warning"><strong>Enroll Now</strong></button>
-              <button type="button" class="btn btn-outline-light"><strong>Learn More</strong></button>
+              <AppButton class="bg_primary">Enroll Now</AppButton>
+              <AppButton class="bg_transparent">Learn More</AppButton>
             </div>
           </div>
         </div>
@@ -31,6 +35,7 @@ export default {
 
 jumbotron h1,span {
   color: $chess_accent;
+  font-size: 20px;
 }
 
 jumbotron .col-6, h1 {
@@ -50,5 +55,24 @@ jumbotron .col-6, h1 {
   padding-bottom: 10rem;
 }
 
+/* Buttons */
+.bg_primary {
+  background-color: $chess_primary;
+  border: none;
+}
+.bg_primary:hover {
+ background-color: $chess_secondary;
+ color: $chess_primary;
+}
+.bg_transparent {
+  background-color: transparent;
+  border: 1px solid $chess_white;
+  color: white;
+}
+
+.bg_transparent:hover {
+  background-color: $chess_white;
+  color: black;
+}
 
 </style>

@@ -1,5 +1,6 @@
 <script>
 import AppPhone from './AppPhone.vue';
+import AppButton from './AppButton.vue'
 export default {
   name: "AppHeader",
   data() {
@@ -10,6 +11,7 @@ export default {
 
   components: {
     AppPhone,
+    AppButton,
   }
 }
 </script>
@@ -36,7 +38,7 @@ export default {
             <span>Call Now 123-456-7890</span>
           </div>
           <div class="col d-flex justify-content-end align-items-center ">
-            <button type="button" class="btn btn-light button_header"><strong>Donate</strong></button>
+            <AppButton class="btn_header">Donate</AppButton>
           </div>
         </div>
       </div>
@@ -75,11 +77,6 @@ header {
   font-size: 14px;
 }
 
-.button_header {
-  font-size: 14px;
-  width: 65%;
-}
-
 .header_bottom span {
   font-size: 14px;
 
@@ -99,5 +96,18 @@ header {
   position: fixed;
   width: 100%;
   margin-bottom: 2rem;
+}
+
+/* Button */
+.btn_header {
+  width: 150px;
+  height: 40px;
+  border-radius: 11px;
+  border: none
+}
+
+.btn_header:hover {
+  background-color: $chess_secondary;
+  color: $chess_primary;
 }
 </style>
