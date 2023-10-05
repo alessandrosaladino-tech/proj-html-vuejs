@@ -28,7 +28,7 @@ export default {
                         <div class="border_news"></div>
                     </div>
 
-                    <button type="button" class="btn btn-outline-dark fw-bold">View Other P osts</button>
+                    <button type="button" class="btn btn-outline-dark fw-bold">View Other Posts</button>
                 </div>
                 <div class="col " v-for="item in news">
                     <img :src="item.img" alt="">
