@@ -33,11 +33,11 @@ export default {
                 <div class="col-2 d-flex justify-content-center">
                     <img src="../assets/img/mt-2236-home-icon5.png" alt="">
                 </div>
-                <div class="col-8 pt-3">
+                <div class="col-7 pt-3">
                     <h1 class="fw-bold">PLAY & LEARN</h1>
                     <p class="fw-light">Take a look into our day to day life here at Chess School</p>
                 </div>
-                <div class="col-2">
+                <div class="col-3">
                     <AppButton class="bg_primary">Lean More</AppButton>
                 </div>
             </div>
