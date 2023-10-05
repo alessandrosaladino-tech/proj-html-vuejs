@@ -46,7 +46,7 @@ export default {
         </div>
         <div class="col d-flex flex-column gap-3">
             <h4 class="m-0 fw-bold">Subscribe to get the latest news, course updates, discounts,events</h4>
-            <input type="text" placeholder="Enter your e-mail here*" v-model="subscribedEmail" @keyup.enter="addEmail">
+            <input type="email" placeholder="Enter your e-mail here*" v-model="subscribedEmail" @keyup.enter="addEmail">
             <AppButton class="bg_primary" @click="addEmail">Subscribe</AppButton>
         </div>
     </div>
