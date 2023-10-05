@@ -69,6 +69,7 @@ export default {
     transform: scale(2);
     background-color: $chess_accent;
     border: 1px double $chess_primary;
+    transition: 2s;
 }
 
 /* Buttons */

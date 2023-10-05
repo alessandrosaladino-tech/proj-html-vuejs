@@ -70,6 +70,7 @@ img {
 .col:hover{
     transform: scale(1.1);
     box-shadow: 0px 1px 5px $chess_accent;
+    transition: 1s;
 }
 
 /* Button */
