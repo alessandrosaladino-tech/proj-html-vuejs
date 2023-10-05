@@ -87,6 +87,7 @@ p {
 
 .courses_card:hover {
     transform: scale(1.1);
+    transition: 2s;
 }
 
 .text {
