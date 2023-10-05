@@ -21,7 +21,9 @@ export default {
     <div class="container">
 
       <div class="header_top py-2">
+        <!--Prima Row-->
         <div class="row align-items-center ">
+
           <div class="col-6 d-flex gap-2 r align-items-center ">
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="yellow" class="bi bi-geo-alt-fill"
               viewBox="0 0 16 16">
@@ -29,6 +31,7 @@ export default {
             </svg>
             <span>6767 Santa Monica Blvd, Los Angeles, CA 90038</span>
           </div>
+
           <div class="col d-flex justify-content-end align-items-center gap-2 me-5">
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="yellow" class="bi bi-telephone-fill"
               viewBox="0 0 16 16">
@@ -37,6 +40,7 @@ export default {
             </svg>
             <span>Call Now 123-456-7890</span>
           </div>
+
           <div class="col d-flex justify-content-end align-items-center ">
             <AppButton class="btn_header">Donate</AppButton>
           </div>
@@ -46,6 +50,7 @@ export default {
 
 
       <div class="header_bottom pb-3 pt-1">
+        <!--Seconda row-->
         <div class="row">
           <div class="col">
             <img src="../assets/img/mt-2236-home-logo.png" alt="">
